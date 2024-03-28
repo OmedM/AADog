@@ -29,52 +29,35 @@
     color: #fff;
 }
 
-#index-section-one {
+
+#footer-section {
     display: flex;
-    padding: 100px;
-    max-width: 1000px;
-    height: 500px;
-    gap: 80px;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
+    max-width: 1000px;
+    padding: 100px;
 }
 
-#index-section-one-text {
-    text-align: justify;
-    height: 100%;
+#footer-section-logo {
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
 }
 
-#index-section-two {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 500px;
-    width: 500px;
-    background: url('../figures/indexFigure2.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+#footer-section-logo-text {
+    font-size: 60pt;
 }
+
 
 @media only screen and (max-width: 768px) {
-    #index-section-one {
-        flex-direction: column-reverse;
-        height: auto;
-        width: 100%;
-        padding: 50px;
+    #footer-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px;
         gap: 40px;
-        justify-content: space-around;
-        align-content: center;
     }
-
-    #index-section-two {
-        display: flex;
-        align-items: center;
+    
+    #footer-section-logo {
         justify-content: center;
-        text-align: center;
-        width: 80vw;
     }
 }
