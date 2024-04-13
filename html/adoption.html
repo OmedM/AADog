@@ -6,7 +6,7 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/adoption.css">
   </head>
   <body class="inter-regular">
     <nav class="navbar navbar-expand-sm sticky-top main-color navbar-dark">
@@ -31,62 +31,499 @@
         </div>
     </nav>
 
-    <div id="carousel" class="carousel slide carousel-sizing">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner carousel-sizing">
-          <div class="carousel-item active">
-            <img src="../figures/indexCarousel1.jpg" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="../figures/indexCarousel2.webp" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="../figures/indexCarousel3.jpeg" class="d-block w-100">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <div id="adoption-header" class="my-5 mx-4">
+      <h1 class="inter-bold">Adopt a Dog</h1>
+      <div id="adoption-header-text">
+        <p class="text-center">Looking for a furry companion? Browse through our available dogs ready for adoption. Whether you're looking for a playful pup or a loyal companion, we have a wide variety of dogs waiting to find their forever homes.</p>
       </div>
+    </div>
 
-      <div class="container-fluid" id="index-section-one">
-        <p id="index-section-one-text">A.A Dog is the place where tails wag and hearts melt! We're dedicated to rescuing and rehoming dogs in need. Explore our website to learn more about our mission and how you can get involved.</p>
-        <img src="../figures/indexFigure1.png">
-      </div>
-
-      <div class="container-fluid" id="index-section-two">
-        <p id="index-section-two-text">At A.A Dog, we believe that every dog deserves a loving home. Our team is passionate about animal welfare and works tirelessly to provide care and support to dogs in need.</p>
-      </div>
-
-      <footer class="main-color">
-        <div class="container-fluid" id="footer-section">
-            <div id="footer-section-items">
-                <ul class="navbar-nav fs-4">
-                    <li class="nav-item">
-                        <a href="adoption.html" class="nav-link text-white">Adoption</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link text-white">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link text-white">About</a>
-                    </li>
-                </ul>
+    <div class="cards-container">
+      <div class="card adoption-card">
+        <img class="card-img-top" src="../figures/dog1.png">
+        <div  class="card-body">
+          <p>Max, 3 years, Black</p>
+          <div class="mt-3">
+            <p>Calmness</p>
+            <div class="progress" style="margin-top: -10px;">
+              <div class="progress-bar bg-warning" style="width: 40%;"></div>
             </div>
-            <div id="footer-section-logo">
-                <a href="#carousel" class="navbar-brand aguafina-script-regular" id="footer-section-logo-text">A.A Dog</a>
+          </div>
+          <div class="mt-3">
+            <p>Tends to play</p>
+            <div class="progress" style="margin-top: -10px;">
+              <div class="progress-bar bg-info" style="width: 80%;"></div>
             </div>
+          </div>    
+          <div class="mt-3">
+            <p>Sleepiness</p>
+            <div class="progress" style="margin-top: -10px;">
+              <div class="progress-bar bg-success" style="width: 50%;"></div>
+            </div>
+          </div>            
+          <button data-bs-target="#dog1-modal" data-bs-toggle="modal" class="btn btn-outline-success mt-3 float-end">More info</button>
         </div>
-      </footer>
+      </div>
+      
+      <div class="card adoption-card">
+          <img class="card-img-top" src="../figures/dog2.png">
+          <div  class="card-body">
+            <p>Bailey, 7 years, Dark Brown</p>
+            <div class="mt-3">
+              <p>Calmness</p>
+              <div class="progress" style="margin-top: -10px;">
+                <div class="progress-bar bg-warning" style="width: 80%;"></div>
+              </div>
+            </div>
+    
+            <div class="mt-3">
+              <p>Tends to play</p>
+              <div class="progress" style="margin-top: -10px;">
+                <div class="progress-bar bg-info" style="width: 70%;"></div>
+              </div>
+            </div>
+    
+            <div class="mt-3">
+              <p>Sleepiness</p>
+              <div class="progress" style="margin-top: -10px;">
+                <div class="progress-bar bg-success" style="width: 60%;"></div>
+              </div>
+            </div>
+            
+            <button data-bs-target="#dog2-modal" data-bs-toggle="modal" class="btn btn-outline-success mt-3 float-end">More info</button>
+          </div>
+        </div>
+
+        <div class="card adoption-card">
+          <img class="card-img-top" src="../figures/dog3.png">
+          <div  class="card-body">
+            <p>Lola, 2 years, White & Brown</p>
+            <div class="mt-3">
+              <p>Calmness</p>
+              <div class="progress" style="margin-top: -10px;">
+                <div class="progress-bar bg-warning" style="width: 50%;"></div>
+              </div>
+            </div>
+    
+            <div class="mt-3">
+              <p>Tends to play</p>
+              <div class="progress" style="margin-top: -10px;">
+                <div class="progress-bar bg-info" style="width: 20%;"></div>
+              </div>
+            </div>
+    
+            <div class="mt-3">
+              <p>Sleepiness</p>
+              <div class="progress" style="margin-top: -10px;">
+                <div class="progress-bar bg-success" style="width: 90%;"></div>
+              </div>
+            </div>
+            
+            <button data-bs-target="#dog3-modal" data-bs-toggle="modal" class="btn btn-outline-success mt-3 float-end">More info</button>
+          </div>
+        </div>
+    </div>
+
+    <div class="cards-container">
+      <div class="card adoption-card">
+        <img class="card-img-top" src="../figures/dog4.png">
+        <div  class="card-body">
+          <p>Adele, 5 years, Black & Brown</p>
+          <div class="mt-3">
+            <p>Calmness</p>
+            <div class="progress" style="margin-top: -10px;">
+              <div class="progress-bar bg-warning" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <p>Tends to play</p>
+            <div class="progress" style="margin-top: -10px;">
+              <div class="progress-bar bg-info" style="width: 20%;"></div>
+            </div>
+          </div>    
+          <div class="mt-3">
+            <p>Sleepiness</p>
+            <div class="progress" style="margin-top: -10px;">
+              <div class="progress-bar bg-success" style="width: 30%;"></div>
+            </div>
+          </div>            
+          <button data-bs-target="#dog4-modal" data-bs-toggle="modal" class="btn btn-outline-success mt-3 float-end">More info</button>
+        </div>
+      </div>
+      
+      <div class="card adoption-card">
+          <img class="card-img-top" src="../figures/dog5.png">
+          <div  class="card-body">
+            <p>Archie, 6 years, Dull Brown</p>
+            <div class="mt-3">
+              <p>Calmness</p>
+              <div class="progress" style="margin-top: -10px;">
+                <div class="progress-bar bg-warning" style="width: 10%;"></div>
+              </div>
+            </div>
+    
+            <div class="mt-3">
+              <p>Tends to play</p>
+              <div class="progress" style="margin-top: -10px;">
+                <div class="progress-bar bg-info" style="width: 90%;"></div>
+              </div>
+            </div>
+    
+            <div class="mt-3">
+              <p>Sleepiness</p>
+              <div class="progress" style="margin-top: -10px;">
+                <div class="progress-bar bg-success" style="width: 40%;"></div>
+              </div>
+            </div>
+            
+            <button data-bs-target="#dog5-modal" data-bs-toggle="modal" class="btn btn-outline-success mt-3 float-end">More info</button>
+          </div>
+        </div>
+
+        <div class="card adoption-card">
+          <img class="card-img-top" src="../figures/dog6.png">
+          <div  class="card-body">
+            <p>Lucy, 3 years, Beige</p>
+            <div class="mt-3">
+              <p>Calmness</p>
+              <div class="progress" style="margin-top: -10px;">
+                <div class="progress-bar bg-warning" style="width: 60%;"></div>
+              </div>
+            </div>
+    
+            <div class="mt-3">
+              <p>Tends to play</p>
+              <div class="progress" style="margin-top: -10px;">
+                <div class="progress-bar bg-info" style="width: 60%;"></div>
+              </div>
+            </div>
+    
+            <div class="mt-3">
+              <p>Sleepiness</p>
+              <div class="progress" style="margin-top: -10px;">
+                <div class="progress-bar bg-success" style="width: 40%;"></div>
+              </div>
+            </div>
+            
+            <button data-bs-target="#dog6-modal" data-bs-toggle="modal" class="btn btn-outline-success mt-3 float-end">More info</button>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal" id="dog1-modal">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+          </div>
+          <div class="modal-body">
+            <div class="adoption-modal-content">
+              <div class="adoption-modal-content-img-container">
+                <img src="../figures/dog1.png" class="rounded">
+              </div>
+              <div class="adoption-modal-content-table-container">
+                <table class="table table-hover">
+                  <tr>
+                    <td>Name</td>
+                    <td>Max</td>
+                  </tr>
+                  <tr>
+                    <td>Age</td>
+                    <td>3 years</td>
+                  </tr>
+                  <tr>
+                    <td>Gender</td>
+                    <td>Male</td>
+                  </tr>
+                  <tr>
+                    <td>Color</td>
+                    <td>Black</td>
+                  </tr>
+                  <tr>
+                    <td>Weight</td>
+                    <td>10kg</td>
+                  </tr>
+                  <tr>
+                    <td>Breed</td>
+                    <td>French Bulldog</td>
+                  </tr>
+                  <tr>
+                    <td>Home Land</td>
+                    <td>France</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="dog2-modal">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+          </div>
+          <div class="modal-body">
+            <div class="adoption-modal-content">
+              <div class="adoption-modal-content-img-container">
+                <img src="../figures/dog2.png" class="rounded">
+              </div>
+              <div class="adoption-modal-content-table-container">
+                <table class="table table-hover">
+                  <tr>
+                    <td>Name</td>
+                    <td>Bailey</td>
+                  </tr>
+                  <tr>
+                    <td>Age</td>
+                    <td>7 years</td>
+                  </tr>
+                  <tr>
+                    <td>Gender</td>
+                    <td>Male</td>
+                  </tr>
+                  <tr>
+                    <td>Color</td>
+                    <td>Dark Brown</td>
+                  </tr>
+                  <tr>
+                    <td>Weight</td>
+                    <td>12kg</td>
+                  </tr>
+                  <tr>
+                    <td>Breed</td>
+                    <td>Basenji</td>
+                  </tr>
+                  <tr>
+                    <td>Home Land</td>
+                    <td>Central Africa</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="dog3-modal">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+          </div>
+          <div class="modal-body">
+            <div class="adoption-modal-content">
+              <div class="adoption-modal-content-img-container">
+                <img src="../figures/dog3.png" class="rounded">
+              </div>
+              <div class="adoption-modal-content-table-container">
+                <table class="table table-hover">
+                  <tr>
+                    <td>Name</td>
+                    <td>Lola</td>
+                  </tr>
+                  <tr>
+                    <td>Age</td>
+                    <td>2 years</td>
+                  </tr>
+                  <tr>
+                    <td>Gender</td>
+                    <td>Female</td>
+                  </tr>
+                  <tr>
+                    <td>Color</td>
+                    <td>White & Brown</td>
+                  </tr>
+                  <tr>
+                    <td>Weight</td>
+                    <td>10kg</td>
+                  </tr>
+                  <tr>
+                    <td>Breed</td>
+                    <td>Pembroke Welsh Corgi</td>
+                  </tr>
+                  <tr>
+                    <td>Home Land</td>
+                    <td>Wales</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="dog4-modal">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+          </div>
+          <div class="modal-body">
+            <div class="adoption-modal-content">
+              <div class="adoption-modal-content-img-container">
+                <img src="../figures/dog4.png" class="rounded">
+              </div>
+              <div class="adoption-modal-content-table-container">
+                <table class="table table-hover">
+                  <tr>
+                    <td>Name</td>
+                    <td>Adele</td>
+                  </tr>
+                  <tr>
+                    <td>Age</td>
+                    <td>5 years</td>
+                  </tr>
+                  <tr>
+                    <td>Gender</td>
+                    <td>Female</td>
+                  </tr>
+                  <tr>
+                    <td>Color</td>
+                    <td>Black & Brown</td>
+                  </tr>
+                  <tr>
+                    <td>Weight</td>
+                    <td>26kg</td>
+                  </tr>
+                  <tr>
+                    <td>Breed</td>
+                    <td>German Shepherd</td>
+                  </tr>
+                  <tr>
+                    <td>Home Land</td>
+                    <td>Germany</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="dog5-modal">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+          </div>
+          <div class="modal-body">
+            <div class="adoption-modal-content">
+              <div class="adoption-modal-content-img-container">
+                <img src="../figures/dog5.png" class="rounded">
+              </div>
+              <div class="adoption-modal-content-table-container">
+                <table class="table table-hover">
+                  <tr>
+                    <td>Name</td>
+                    <td>Archie</td>
+                  </tr>
+                  <tr>
+                    <td>Age</td>
+                    <td>6 years</td>
+                  </tr>
+                  <tr>
+                    <td>Gender</td>
+                    <td>Female</td>
+                  </tr>
+                  <tr>
+                    <td>Color</td>
+                    <td>Dull Brown</td>
+                  </tr>
+                  <tr>
+                    <td>Weight</td>
+                    <td>29kg</td>
+                  </tr>
+                  <tr>
+                    <td>Breed</td>
+                    <td>Golden Retriever</td>
+                  </tr>
+                  <tr>
+                    <td>Home Land</td>
+                    <td>Scotland</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="dog6-modal">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+          </div>
+          <div class="modal-body">
+            <div class="adoption-modal-content">
+              <div class="adoption-modal-content-img-container">
+                <img src="../figures/dog6.png" class="rounded">
+              </div>
+              <div class="adoption-modal-content-table-container">
+                <table class="table table-hover">
+                  <tr>
+                    <td>Name</td>
+                    <td>Lucy</td>
+                  </tr>
+                  <tr>
+                    <td>Age</td>
+                    <td>3 years</td>
+                  </tr>
+                  <tr>
+                    <td>Gender</td>
+                    <td>Female</td>
+                  </tr>
+                  <tr>
+                    <td>Color</td>
+                    <td>Beige</td>
+                  </tr>
+                  <tr>
+                    <td>Weight</td>
+                    <td>8kg</td>
+                  </tr>
+                  <tr>
+                    <td>Breed</td>
+                    <td>Poodle</td>
+                  </tr>
+                  <tr>
+                    <td>Home Land</td>
+                    <td>Medieval Germany</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="main-color">
+      <div class="container-fluid" id="footer-section">
+        <div id="footer-section-items">
+          <ul class="navbar-nav fs-4">
+            <li class="nav-item">
+              <a href="adoption.html" class="nav-link text-white">Adoption</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link text-white">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link text-white">About</a>
+            </li>
+          </ul>
+        </div>
+        <div id="footer-section-logo">
+          <a href="index.html" class="navbar-brand aguafina-script-regular" id="footer-section-logo-text">A.A Dog</a>
+        </div>
+      </div>
+    </footer>
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
