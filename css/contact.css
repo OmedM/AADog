@@ -1,0 +1,36 @@
+#contact-main-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-main-content {
+    height: 70vh;
+    width: 1000px;
+    align-items: center;
+}
+
+#contact-main-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-main-info-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+@media only screen and (max-width: 768px) {
+    #contact-main-content {
+        height: fit-content;
+    }
+
+    #contact-main-logo {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,29 @@
+#about-main-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-main-content {
+    height: 70vh;
+    max-width: 1000px;
+    align-items: center;
+}
+
+#about-main-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+    #about-main-content {
+        height: fit-content;
+    }
+
+    #about-main-logo {
+        justify-content: center;
+    }
+}

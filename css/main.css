@@ -24,6 +24,10 @@
     font-style: normal;
 }
 
+.body-text-alignment {
+    text-align: justify;
+}
+
 .main-color {
     background-color: #81BB5D;
     color: #fff;
